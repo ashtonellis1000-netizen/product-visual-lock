@@ -92,23 +92,23 @@ export default function Home() {
         padding: '8rem 2rem 6rem',
         position: 'relative',
         overflow: 'hidden',
-        background: '#07070f',
+        background: '#0A0A0B',
       }}>
         {/* Grid background */}
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: 'linear-gradient(rgba(90,79,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(90,79,255,0.04) 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(rgba(100,103,242,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(100,103,242,0.04) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
           pointerEvents: 'none',
         }} />
 
-        {/* Radial glow */}
+        {/* Radial glow — subtle, Linear-style */}
         <div style={{
           position: 'absolute',
           top: '30%', left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: '700px', height: '500px',
-          background: 'radial-gradient(ellipse, rgba(90,79,255,0.12) 0%, transparent 70%)',
+          width: '800px', height: '600px',
+          background: 'radial-gradient(ellipse, rgba(100,103,242,0.07) 0%, transparent 65%)',
           pointerEvents: 'none',
         }} />
 
@@ -117,22 +117,22 @@ export default function Home() {
           display: 'inline-flex',
           alignItems: 'center',
           gap: '8px',
-          border: '1px solid rgba(90,79,255,0.35)',
-          background: 'rgba(90,79,255,0.08)',
+          border: '1px solid rgba(100,103,242,0.35)',
+          background: 'rgba(100,103,242,0.08)',
           padding: '6px 16px',
           marginBottom: '2.5rem',
           position: 'relative',
         }}>
           <span style={{
             width: '6px', height: '6px',
-            background: '#5a4fff',
+            background: '#6467F2',
             borderRadius: '50%',
             animation: 'fingerprint-pulse 2s ease-in-out infinite',
           }} />
           <span style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.7rem',
-            color: 'rgba(90,79,255,0.9)',
+            color: 'rgba(100,103,242,0.9)',
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
           }}>
@@ -154,7 +154,7 @@ export default function Home() {
         }}>
           Your product.{' '}
           <span style={{
-            background: 'linear-gradient(135deg, #a8a0ff 0%, #5a4fff 100%)',
+            background: 'linear-gradient(135deg, #a8a0ff 0%, #6467F2 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
@@ -192,22 +192,22 @@ export default function Home() {
             fontWeight: 500,
             letterSpacing: '0.08em',
             textTransform: 'uppercase',
-            color: '#07070f',
+            color: '#0A0A0B',
             textDecoration: 'none',
             padding: '14px 32px',
-            background: '#5a4fff',
+            background: '#6467F2',
             transition: 'all 0.35s cubic-bezier(0.16, 1, 0.3, 1)',
-            boxShadow: '0 8px 32px rgba(90,79,255,0.35)',
+            boxShadow: '0 8px 32px rgba(100,103,242,0.35)',
           }}
             onMouseEnter={e => {
-              e.currentTarget.style.background = '#7c6fff'
+              e.currentTarget.style.background = '#8083F5'
               e.currentTarget.style.transform = 'translateY(-2px)'
-              e.currentTarget.style.boxShadow = '0 12px 40px rgba(90,79,255,0.45)'
+              e.currentTarget.style.boxShadow = '0 12px 40px rgba(100,103,242,0.45)'
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.background = '#5a4fff'
+              e.currentTarget.style.background = '#6467F2'
               e.currentTarget.style.transform = 'translateY(0)'
-              e.currentTarget.style.boxShadow = '0 8px 32px rgba(90,79,255,0.35)'
+              e.currentTarget.style.boxShadow = '0 8px 32px rgba(100,103,242,0.35)'
             }}
           >
             Enroll Your Product →
@@ -257,7 +257,7 @@ export default function Home() {
       {/* PROBLEM STATEMENT */}
       <section style={{
         padding: '7rem 2rem',
-        background: '#0a0a12',
+        background: '#111112',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -289,7 +289,7 @@ export default function Home() {
             ].map(({ icon, stat, desc }) => (
               <div key={stat} style={{
                 padding: '2.5rem',
-                background: '#0a0a12',
+                background: '#111112',
               }}>
                 <div style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{icon}</div>
                 <div style={{
@@ -319,7 +319,7 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <section id="how-it-works" style={{
         padding: '7rem 2rem',
-        background: '#07070f',
+        background: '#0A0A0B',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <Label>How It Works</Label>
@@ -341,13 +341,13 @@ export default function Home() {
                 fontWeight: 500,
                 letterSpacing: '0.12em',
                 textTransform: 'uppercase',
-                color: '#5a4fff',
+                color: '#6467F2',
                 marginBottom: '2rem',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '8px',
               }}>
-                <span style={{ width: '20px', height: '1px', background: '#5a4fff', display: 'inline-block' }} />
+                <span style={{ width: '20px', height: '1px', background: '#6467F2', display: 'inline-block' }} />
                 For Brands
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
@@ -387,7 +387,7 @@ export default function Home() {
       {/* GALLERY PREVIEW */}
       <section style={{
         padding: '7rem 2rem',
-        background: '#08080f',
+        background: '#0D0D0E',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -435,10 +435,122 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CREATOR STRIP */}
+      <section style={{
+        padding: '5rem 2rem',
+        background: '#111112',
+        borderTop: '1px solid rgba(255,255,255,0.05)',
+      }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '0',
+            background: 'rgba(255,255,255,0.04)',
+          }}>
+            {/* Left — creator pitch */}
+            <div style={{
+              padding: '3rem',
+              background: '#111112',
+              borderRight: '1px solid rgba(255,255,255,0.05)',
+            }}>
+              <div style={{
+                fontFamily: 'JetBrains Mono, monospace',
+                fontSize: '0.6rem',
+                color: 'rgba(240,240,248,0.3)',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                marginBottom: '1.25rem',
+              }}>
+                For Creators
+              </div>
+              <h3 style={{
+                fontFamily: 'EB Garamond, serif',
+                fontSize: '1.8rem',
+                fontWeight: 400,
+                color: '#f0f0f8',
+                lineHeight: 1.2,
+                marginBottom: '1rem',
+              }}>
+                Generate AI video ads.<br />Get paid when brands approve.
+              </h3>
+              <p style={{
+                fontFamily: 'Raleway, sans-serif',
+                fontSize: '0.85rem',
+                fontWeight: 300,
+                color: 'rgba(240,240,248,0.45)',
+                lineHeight: 1.7,
+                marginBottom: '1.75rem',
+              }}>
+                Pick a brief. Write a scene description. The locked product fingerprint loads automatically — the product always looks real. No technical knowledge, no IP-Adapter setup, no LoRA training. Just generate and submit.
+              </p>
+              <Link href="/gallery" style={{
+                fontFamily: 'Raleway, sans-serif',
+                fontSize: '0.78rem',
+                fontWeight: 500,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                color: 'rgba(240,240,248,0.6)',
+                textDecoration: 'none',
+                border: '1px solid rgba(255,255,255,0.12)',
+                padding: '10px 20px',
+                display: 'inline-block',
+                transition: 'all 0.25s ease',
+              }}
+                onMouseEnter={e => { e.currentTarget.style.color = '#f0f0f8'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)' }}
+                onMouseLeave={e => { e.currentTarget.style.color = 'rgba(240,240,248,0.6)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)' }}
+              >
+                Browse open briefs →
+              </Link>
+            </div>
+
+            {/* Right — three creator stats */}
+            <div style={{
+              display: 'grid',
+              gridTemplateRows: 'repeat(3, 1fr)',
+              background: '#111112',
+            }}>
+              {[
+                { val: '$90–$220', label: 'per approved video', sub: 'Across current open briefs' },
+                { val: '48h', label: 'typical approval time', sub: 'Brands review fast — money is waiting' },
+                { val: '0', label: 'technical setup required', sub: 'Fingerprint loads. You just write the scene.' },
+              ].map(({ val, label, sub }, i) => (
+                <div key={val} style={{
+                  padding: '1.75rem 2.5rem',
+                  borderTop: i > 0 ? '1px solid rgba(255,255,255,0.05)' : 'none',
+                }}>
+                  <div style={{
+                    fontFamily: 'EB Garamond, serif',
+                    fontSize: '1.8rem',
+                    fontWeight: 400,
+                    color: '#f0f0f8',
+                    marginBottom: '0.15rem',
+                  }}>{val}</div>
+                  <div style={{
+                    fontFamily: 'Raleway, sans-serif',
+                    fontSize: '0.75rem',
+                    fontWeight: 400,
+                    color: 'rgba(240,240,248,0.5)',
+                    letterSpacing: '0.02em',
+                  }}>{label}</div>
+                  <div style={{
+                    fontFamily: 'Raleway, sans-serif',
+                    fontSize: '0.7rem',
+                    fontWeight: 300,
+                    color: 'rgba(240,240,248,0.25)',
+                    marginTop: '2px',
+                  }}>{sub}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROOF OF CONCEPT: BEYZO */}
       <section style={{
         padding: '7rem 2rem',
-        background: '#07070f',
+        background: '#0A0A0B',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <Label>Proof of Concept</Label>
@@ -487,8 +599,8 @@ export default function Home() {
 
             {/* Visual: Fingerprint card */}
             <div style={{
-              border: '1px solid rgba(90,79,255,0.2)',
-              background: 'rgba(90,79,255,0.04)',
+              border: '1px solid rgba(100,103,242,0.2)',
+              background: 'rgba(100,103,242,0.04)',
               padding: '2.5rem',
               position: 'relative',
               overflow: 'hidden',
@@ -498,7 +610,7 @@ export default function Home() {
                 position: 'absolute',
                 top: '-60px', right: '-60px',
                 width: '240px', height: '240px',
-                border: '1px solid rgba(90,79,255,0.15)',
+                border: '1px solid rgba(100,103,242,0.15)',
                 borderRadius: '50%',
                 animation: 'fingerprint-pulse 4s ease-in-out infinite',
               }} />
@@ -506,7 +618,7 @@ export default function Home() {
                 position: 'absolute',
                 top: '-30px', right: '-30px',
                 width: '180px', height: '180px',
-                border: '1px solid rgba(90,79,255,0.1)',
+                border: '1px solid rgba(100,103,242,0.1)',
                 borderRadius: '50%',
                 animation: 'fingerprint-pulse 4s ease-in-out infinite 1s',
               }} />
@@ -514,7 +626,7 @@ export default function Home() {
               <div style={{
                 fontFamily: 'JetBrains Mono, monospace',
                 fontSize: '0.65rem',
-                color: 'rgba(90,79,255,0.6)',
+                color: 'rgba(100,103,242,0.6)',
                 letterSpacing: '0.08em',
                 marginBottom: '1.5rem',
               }}>
@@ -550,8 +662,8 @@ export default function Home() {
                   <span key={tag} style={{
                     fontFamily: 'JetBrains Mono, monospace',
                     fontSize: '0.6rem',
-                    color: 'rgba(90,79,255,0.7)',
-                    border: '1px solid rgba(90,79,255,0.2)',
+                    color: 'rgba(100,103,242,0.7)',
+                    border: '1px solid rgba(100,103,242,0.2)',
                     padding: '3px 8px',
                     letterSpacing: '0.06em',
                   }}>
@@ -579,7 +691,7 @@ export default function Home() {
       {/* TECH STACK */}
       <section style={{
         padding: '5rem 2rem',
-        background: '#0a0a12',
+        background: '#111112',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
@@ -613,7 +725,7 @@ export default function Home() {
       {/* PRICING */}
       <section id="pricing" style={{
         padding: '7rem 2rem',
-        background: '#07070f',
+        background: '#0A0A0B',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <Label>Pricing</Label>
@@ -692,7 +804,7 @@ export default function Home() {
       {/* FINAL CTA */}
       <section style={{
         padding: '8rem 2rem',
-        background: 'linear-gradient(180deg, #07070f 0%, #0d0a1f 100%)',
+        background: 'linear-gradient(180deg, #0A0A0B 0%, #0E0D14 100%)',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden',
@@ -702,7 +814,7 @@ export default function Home() {
           bottom: '-100px', left: '50%',
           transform: 'translateX(-50%)',
           width: '600px', height: '400px',
-          background: 'radial-gradient(ellipse, rgba(90,79,255,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(100,103,242,0.08) 0%, transparent 70%)',
           pointerEvents: 'none',
         }} />
         <Label center>Ready to lock your product?</Label>
@@ -730,23 +842,23 @@ export default function Home() {
           fontWeight: 500,
           letterSpacing: '0.08em',
           textTransform: 'uppercase',
-          color: '#07070f',
+          color: '#0A0A0B',
           textDecoration: 'none',
           padding: '16px 40px',
-          background: '#5a4fff',
+          background: '#6467F2',
           transition: 'all 0.35s cubic-bezier(0.16, 1, 0.3, 1)',
-          boxShadow: '0 8px 40px rgba(90,79,255,0.4)',
+          boxShadow: '0 8px 40px rgba(100,103,242,0.4)',
           display: 'inline-block',
         }}
           onMouseEnter={e => {
-            e.currentTarget.style.background = '#7c6fff'
+            e.currentTarget.style.background = '#8083F5'
             e.currentTarget.style.transform = 'translateY(-3px)'
-            e.currentTarget.style.boxShadow = '0 16px 48px rgba(90,79,255,0.5)'
+            e.currentTarget.style.boxShadow = '0 16px 48px rgba(100,103,242,0.5)'
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = '#5a4fff'
+            e.currentTarget.style.background = '#6467F2'
             e.currentTarget.style.transform = 'translateY(0)'
-            e.currentTarget.style.boxShadow = '0 8px 40px rgba(90,79,255,0.4)'
+            e.currentTarget.style.boxShadow = '0 8px 40px rgba(100,103,242,0.4)'
           }}
         >
           Enroll Your Product — Phase 1 →
@@ -766,13 +878,13 @@ function Label({ children, center }) {
       fontWeight: 400,
       letterSpacing: '0.12em',
       textTransform: 'uppercase',
-      color: 'rgba(90,79,255,0.7)',
+      color: 'rgba(100,103,242,0.7)',
       display: 'flex',
       alignItems: 'center',
       gap: '10px',
       justifyContent: center ? 'center' : 'flex-start',
     }}>
-      <span style={{ width: '24px', height: '1px', background: 'rgba(90,79,255,0.5)', display: 'inline-block' }} />
+      <span style={{ width: '24px', height: '1px', background: 'rgba(100,103,242,0.5)', display: 'inline-block' }} />
       {children}
     </div>
   )
@@ -794,13 +906,13 @@ function StepRow({ step, last, dim }) {
       }}>
         <div style={{
           width: '36px', height: '36px',
-          border: `1px solid ${dim ? 'rgba(255,255,255,0.1)' : 'rgba(90,79,255,0.35)'}`,
+          border: `1px solid ${dim ? 'rgba(255,255,255,0.1)' : 'rgba(100,103,242,0.35)'}`,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: '0.65rem',
-          color: dim ? 'rgba(240,240,248,0.3)' : 'rgba(90,79,255,0.8)',
+          color: dim ? 'rgba(240,240,248,0.3)' : 'rgba(100,103,242,0.8)',
           flexShrink: 0,
         }}>
           {step.n}
@@ -810,7 +922,7 @@ function StepRow({ step, last, dim }) {
             width: '1px',
             flex: 1,
             minHeight: '2rem',
-            background: dim ? 'rgba(255,255,255,0.06)' : 'rgba(90,79,255,0.15)',
+            background: dim ? 'rgba(255,255,255,0.06)' : 'rgba(100,103,242,0.15)',
             margin: '4px 0',
           }} />
         )}
@@ -844,14 +956,14 @@ function StepRow({ step, last, dim }) {
 function GalleryCardMini({ item }) {
   return (
     <div style={{
-      background: '#08080f',
+      background: '#0D0D0E',
       padding: '2rem',
       position: 'relative',
       cursor: 'pointer',
       transition: 'background 0.3s ease',
     }}
-      onMouseEnter={e => e.currentTarget.style.background = '#0e0e1c'}
-      onMouseLeave={e => e.currentTarget.style.background = '#08080f'}
+      onMouseEnter={e => e.currentTarget.style.background = '#161618'}
+      onMouseLeave={e => e.currentTarget.style.background = '#0D0D0E'}
     >
       {/* Status badge */}
       <div style={{
@@ -954,15 +1066,15 @@ function PricingTier({ tier }) {
   return (
     <div style={{
       padding: '2.5rem',
-      background: tier.primary ? 'rgba(90,79,255,0.07)' : '#08080f',
-      border: tier.primary ? '1px solid rgba(90,79,255,0.25)' : 'none',
+      background: tier.primary ? 'rgba(100,103,242,0.07)' : '#0D0D0E',
+      border: tier.primary ? '1px solid rgba(100,103,242,0.25)' : 'none',
       position: 'relative',
     }}>
       {tier.primary && (
         <div style={{
           position: 'absolute',
           top: '-1px', left: '2rem',
-          background: '#5a4fff',
+          background: '#6467F2',
           padding: '3px 12px',
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: '0.6rem',
@@ -976,7 +1088,7 @@ function PricingTier({ tier }) {
       <div style={{
         fontFamily: 'JetBrains Mono, monospace',
         fontSize: '0.6rem',
-        color: 'rgba(90,79,255,0.5)',
+        color: 'rgba(100,103,242,0.5)',
         letterSpacing: '0.1em',
         marginBottom: '0.75rem',
         marginTop: tier.primary ? '0.5rem' : '0',
@@ -1031,7 +1143,7 @@ function PricingTier({ tier }) {
             alignItems: 'flex-start',
             marginBottom: '0.6rem',
           }}>
-            <span style={{ color: '#5a4fff', flexShrink: 0, marginTop: '2px' }}>→</span>
+            <span style={{ color: '#6467F2', flexShrink: 0, marginTop: '2px' }}>→</span>
             <span style={{
               fontFamily: 'Raleway, sans-serif',
               fontSize: '0.82rem',
@@ -1054,14 +1166,14 @@ function PricingTier({ tier }) {
         textTransform: 'uppercase',
         textDecoration: 'none',
         padding: '12px 24px',
-        background: tier.primary ? '#5a4fff' : 'transparent',
-        color: tier.primary ? '#07070f' : 'rgba(240,240,248,0.6)',
+        background: tier.primary ? '#6467F2' : 'transparent',
+        color: tier.primary ? '#0A0A0B' : 'rgba(240,240,248,0.6)',
         border: tier.primary ? 'none' : '1px solid rgba(255,255,255,0.12)',
         transition: 'all 0.3s ease',
       }}
         onMouseEnter={e => {
           if (tier.primary) {
-            e.currentTarget.style.background = '#7c6fff'
+            e.currentTarget.style.background = '#8083F5'
           } else {
             e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'
             e.currentTarget.style.color = '#f0f0f8'
@@ -1069,7 +1181,7 @@ function PricingTier({ tier }) {
         }}
         onMouseLeave={e => {
           if (tier.primary) {
-            e.currentTarget.style.background = '#5a4fff'
+            e.currentTarget.style.background = '#6467F2'
           } else {
             e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'
             e.currentTarget.style.color = 'rgba(240,240,248,0.6)'

@@ -86,17 +86,17 @@ export default function Navbar() {
           color: '#f0f0f8',
           textDecoration: 'none',
           padding: '8px 20px',
-          border: '1px solid rgba(90,79,255,0.5)',
-          background: 'rgba(90,79,255,0.1)',
+          border: '1px solid rgba(100,103,242,0.5)',
+          background: 'rgba(100,103,242,0.1)',
           transition: 'all 0.3s ease',
         }}
           onMouseEnter={e => {
-            e.currentTarget.style.background = 'rgba(90,79,255,0.25)'
-            e.currentTarget.style.borderColor = '#5a4fff'
+            e.currentTarget.style.background = 'rgba(100,103,242,0.25)'
+            e.currentTarget.style.borderColor = '#6467F2'
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = 'rgba(90,79,255,0.1)'
-            e.currentTarget.style.borderColor = 'rgba(90,79,255,0.5)'
+            e.currentTarget.style.background = 'rgba(100,103,242,0.1)'
+            e.currentTarget.style.borderColor = 'rgba(100,103,242,0.5)'
           }}
         >
           Enroll Product
@@ -115,10 +115,10 @@ export default function Navbar() {
 function LockIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-      <rect x="3" y="11" width="18" height="11" stroke="#5a4fff" strokeWidth="1.5" />
-      <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#5a4fff" strokeWidth="1.5" />
-      <circle cx="12" cy="16.5" r="1.5" fill="#5a4fff" />
-      <line x1="12" y1="16.5" x2="12" y2="19" stroke="#5a4fff" strokeWidth="1.5" />
+      <rect x="3" y="11" width="18" height="11" stroke="#6467F2" strokeWidth="1.5" />
+      <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#6467F2" strokeWidth="1.5" />
+      <circle cx="12" cy="16.5" r="1.5" fill="#6467F2" />
+      <line x1="12" y1="16.5" x2="12" y2="19" stroke="#6467F2" strokeWidth="1.5" />
     </svg>
   )
 }

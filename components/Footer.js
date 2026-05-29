@@ -5,7 +5,7 @@ export default function Footer() {
     <footer style={{
       borderTop: '1px solid rgba(255,255,255,0.06)',
       padding: '4rem 2rem 3rem',
-      background: '#07070f',
+      background: '#0A0A0B',
     }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{
@@ -44,7 +44,7 @@ export default function Footer() {
               { label: 'Enroll Your Product', href: '/for-brands' },
               { label: 'How It Works', href: '/#how-it-works' },
               { label: 'Pricing', href: '/#pricing' },
-              { label: 'Case Study: BEYZO', href: '/case-study' },
+              { label: 'Phase 1 — 5 spots open', href: '/for-brands#enroll' },
             ]} />
           </div>
 
@@ -53,9 +53,9 @@ export default function Footer() {
             <FooterHeading>For Creators</FooterHeading>
             <FooterLinks links={[
               { label: 'Browse Brand Gallery', href: '/gallery' },
-              { label: 'How Payments Work', href: '/gallery#payments' },
-              { label: 'Creator Guidelines', href: '/creators' },
-              { label: 'Apply to Create', href: '/creators#apply' },
+              { label: 'Join Creator Waitlist', href: 'mailto:hello@productvisuallock.com?subject=Creator Waitlist' },
+              { label: 'How Payouts Work', href: '/#how-it-works' },
+              { label: 'Contact Us', href: 'mailto:hello@productvisuallock.com' },
             ]} />
           </div>
 
@@ -63,10 +63,10 @@ export default function Footer() {
           <div>
             <FooterHeading>Company</FooterHeading>
             <FooterLinks links={[
-              { label: 'About', href: '/about' },
+              { label: 'GitHub', href: 'https://github.com/ashtonellis1000-netizen/product-visual-lock' },
               { label: 'Contact', href: 'mailto:hello@productvisuallock.com' },
-              { label: 'Terms of Service', href: '/legal/terms' },
-              { label: 'Privacy Policy', href: '/legal/privacy' },
+              { label: 'BEYZO (Case Study)', href: '/#proof' },
+              { label: 'Phase 1 Enrollment', href: '/for-brands#enroll' },
             ]} />
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Footer() {
           <span style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.7rem',
-            color: 'rgba(90,79,255,0.5)',
+            color: 'rgba(100,103,242,0.5)',
             letterSpacing: '0.05em',
           }}>
             VISUAL_FINGERPRINT_LOCKED

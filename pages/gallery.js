@@ -140,13 +140,13 @@ export default function Gallery() {
         paddingBottom: '3rem',
         padding: '100px 2rem 3rem',
         borderBottom: '1px solid rgba(255,255,255,0.05)',
-        background: '#07070f',
+        background: '#0A0A0B',
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.65rem',
-            color: 'rgba(90,79,255,0.6)',
+            color: 'rgba(100,103,242,0.6)',
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
             marginBottom: '1rem',
@@ -204,8 +204,8 @@ export default function Gallery() {
                 fontWeight: activeCategory === cat ? 500 : 300,
                 letterSpacing: '0.05em',
                 padding: '6px 14px',
-                background: activeCategory === cat ? 'rgba(90,79,255,0.15)' : 'transparent',
-                border: `1px solid ${activeCategory === cat ? 'rgba(90,79,255,0.4)' : 'rgba(255,255,255,0.08)'}`,
+                background: activeCategory === cat ? 'rgba(100,103,242,0.15)' : 'transparent',
+                border: `1px solid ${activeCategory === cat ? 'rgba(100,103,242,0.4)' : 'rgba(255,255,255,0.08)'}`,
                 color: activeCategory === cat ? '#f0f0f8' : 'rgba(240,240,248,0.45)',
                 cursor: 'pointer',
                 transition: 'all 0.2s ease',
@@ -301,14 +301,14 @@ function CampaignCard({ campaign, onClick }) {
     <div
       onClick={onClick}
       style={{
-        background: '#08080f',
+        background: '#0D0D0E',
         padding: '2rem',
         cursor: 'pointer',
         transition: 'background 0.25s ease',
         position: 'relative',
       }}
-      onMouseEnter={e => e.currentTarget.style.background = '#0d0d1c'}
-      onMouseLeave={e => e.currentTarget.style.background = '#08080f'}
+      onMouseEnter={e => e.currentTarget.style.background = '#161618'}
+      onMouseLeave={e => e.currentTarget.style.background = '#0D0D0E'}
     >
       {/* Status */}
       <div style={{
@@ -477,7 +477,7 @@ function CampaignModal({ campaign, onClose }) {
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'rgba(7,7,15,0.85)',
+          background: 'rgba(10,10,11,0.88)',
           backdropFilter: 'blur(8px)',
         }}
       />
@@ -485,7 +485,7 @@ function CampaignModal({ campaign, onClose }) {
       {/* Modal */}
       <div style={{
         position: 'relative',
-        background: '#0d0d1a',
+        background: '#131315',
         border: '1px solid rgba(255,255,255,0.08)',
         maxWidth: '640px',
         width: '100%',
@@ -512,7 +512,7 @@ function CampaignModal({ campaign, onClose }) {
         <div style={{
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: '0.6rem',
-          color: 'rgba(90,79,255,0.5)',
+          color: 'rgba(100,103,242,0.5)',
           letterSpacing: '0.08em',
           marginBottom: '1.25rem',
         }}>
@@ -552,7 +552,7 @@ function CampaignModal({ campaign, onClose }) {
           <div style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.6rem',
-            color: 'rgba(90,79,255,0.6)',
+            color: 'rgba(100,103,242,0.6)',
             letterSpacing: '0.1em',
             marginBottom: '0.75rem',
           }}>
@@ -582,7 +582,7 @@ function CampaignModal({ campaign, onClose }) {
             { label: 'Platform', value: campaign.platform.split('·')[0].trim() },
             { label: 'Deadline', value: campaign.deadline },
           ].map(({ label, value }) => (
-            <div key={label} style={{ padding: '1rem', background: '#0d0d1a' }}>
+            <div key={label} style={{ padding: '1rem', background: '#131315' }}>
               <div style={{
                 fontFamily: 'JetBrains Mono, monospace',
                 fontSize: '0.58rem',
@@ -621,8 +621,8 @@ function CampaignModal({ campaign, onClose }) {
               <span key={tag} style={{
                 fontFamily: 'JetBrains Mono, monospace',
                 fontSize: '0.58rem',
-                color: 'rgba(90,79,255,0.7)',
-                border: '1px solid rgba(90,79,255,0.2)',
+                color: 'rgba(100,103,242,0.7)',
+                border: '1px solid rgba(100,103,242,0.2)',
                 padding: '3px 8px',
                 letterSpacing: '0.06em',
               }}>
@@ -632,39 +632,68 @@ function CampaignModal({ campaign, onClose }) {
           </div>
         </div>
 
-        {/* CTA */}
-        <button style={{
-          width: '100%',
-          fontFamily: 'Raleway, sans-serif',
-          fontSize: '0.82rem',
-          fontWeight: 500,
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          color: '#07070f',
-          background: '#5a4fff',
-          border: 'none',
-          padding: '14px 24px',
-          cursor: 'pointer',
-          transition: 'background 0.25s ease',
-          marginBottom: '0.75rem',
-        }}
-          onMouseEnter={e => e.currentTarget.style.background = '#7c6fff'}
-          onMouseLeave={e => e.currentTarget.style.background = '#5a4fff'}
-        >
-          Generate Video for This Brief →
-        </button>
+        {/* Phase 1 creator waitlist CTA */}
+        <div style={{
+          border: '1px solid rgba(100,103,242,0.2)',
+          background: 'rgba(100,103,242,0.05)',
+          padding: '1.25rem 1.5rem',
+          marginBottom: '1rem',
+        }}>
+          <div style={{
+            fontFamily: 'JetBrains Mono, monospace',
+            fontSize: '0.6rem',
+            color: 'rgba(100,103,242,0.6)',
+            letterSpacing: '0.1em',
+            marginBottom: '0.5rem',
+          }}>
+            PHASE 1 — CREATOR ACCESS OPENING SOON
+          </div>
+          <p style={{
+            fontFamily: 'Raleway, sans-serif',
+            fontSize: '0.82rem',
+            fontWeight: 300,
+            color: 'rgba(240,240,248,0.5)',
+            lineHeight: 1.6,
+            marginBottom: '1rem',
+          }}>
+            Generation is not open yet — we're seeding 3–5 brands first so there's real money waiting when creators go live. Join the waitlist and you'll be first in.
+          </p>
+          <a
+            href={`mailto:hello@productvisuallock.com?subject=Creator Waitlist — ${campaign.brand} ${campaign.product}&body=I want to generate videos for this brief.`}
+            style={{
+              display: 'block',
+              width: '100%',
+              textAlign: 'center',
+              fontFamily: 'Raleway, sans-serif',
+              fontSize: '0.8rem',
+              fontWeight: 500,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: '#0A0A0B',
+              background: '#6467F2',
+              textDecoration: 'none',
+              padding: '12px 24px',
+              transition: 'background 0.25s ease',
+              boxSizing: 'border-box',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = '#8083F5'}
+            onMouseLeave={e => e.currentTarget.style.background = '#6467F2'}
+          >
+            Join Creator Waitlist →
+          </a>
+        </div>
 
         <p style={{
           fontFamily: 'Raleway, sans-serif',
-          fontSize: '0.72rem',
+          fontSize: '0.7rem',
           fontWeight: 300,
-          color: 'rgba(240,240,248,0.25)',
+          color: 'rgba(240,240,248,0.2)',
           textAlign: 'center',
           lineHeight: 1.6,
         }}>
-          Product fingerprint loads automatically. No technical setup needed.
+          Product fingerprint loads automatically when you generate. No technical setup needed.
           <br />
-          Watermark applied until brand approval and payment clears.
+          Watermark applied until brand approval and payment clears via Stripe.
         </p>
       </div>
     </div>

@@ -61,7 +61,7 @@ export default function ForBrands() {
         paddingTop: '120px',
         paddingBottom: '6rem',
         padding: '120px 2rem 6rem',
-        background: '#07070f',
+        background: '#0A0A0B',
         position: 'relative',
         overflow: 'hidden',
       }}>
@@ -69,7 +69,7 @@ export default function ForBrands() {
           position: 'absolute',
           top: '10%', left: '60%',
           width: '600px', height: '600px',
-          background: 'radial-gradient(ellipse, rgba(90,79,255,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(100,103,242,0.08) 0%, transparent 70%)',
           pointerEvents: 'none',
         }} />
 
@@ -77,7 +77,7 @@ export default function ForBrands() {
           <div style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.65rem',
-            color: 'rgba(90,79,255,0.6)',
+            color: 'rgba(100,103,242,0.6)',
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
             marginBottom: '1.5rem',
@@ -85,7 +85,7 @@ export default function ForBrands() {
             alignItems: 'center',
             gap: '10px',
           }}>
-            <span style={{ width: '24px', height: '1px', background: 'rgba(90,79,255,0.5)', display: 'inline-block' }} />
+            <span style={{ width: '24px', height: '1px', background: 'rgba(100,103,242,0.5)', display: 'inline-block' }} />
             For Brands
           </div>
 
@@ -127,11 +127,11 @@ export default function ForBrands() {
               fontWeight: 500,
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
-              color: '#07070f',
+              color: '#0A0A0B',
               textDecoration: 'none',
               padding: '14px 32px',
-              background: '#5a4fff',
-              boxShadow: '0 8px 32px rgba(90,79,255,0.35)',
+              background: '#6467F2',
+              boxShadow: '0 8px 32px rgba(100,103,242,0.35)',
               transition: 'all 0.3s ease',
               display: 'inline-block',
             }}>
@@ -159,7 +159,7 @@ export default function ForBrands() {
       {/* Why brands care */}
       <section style={{
         padding: '6rem 2rem',
-        background: '#0a0a12',
+        background: '#111112',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
@@ -175,7 +175,7 @@ export default function ForBrands() {
               { stat: '48h', label: 'To fingerprint your product', desc: 'Send us your photos on Monday. Your fingerprint is locked by Wednesday.' },
               { stat: '∞', label: 'Generations from one fingerprint', desc: 'Enroll once. The fingerprint works across every brief, every creator, every scene.' },
             ].map(({ stat, label, desc }) => (
-              <div key={stat} style={{ padding: '2.5rem', background: '#0a0a12' }}>
+              <div key={stat} style={{ padding: '2.5rem', background: '#111112' }}>
                 <div style={{
                   fontFamily: 'EB Garamond, serif',
                   fontSize: '2.8rem',
@@ -191,7 +191,7 @@ export default function ForBrands() {
                   fontWeight: 500,
                   letterSpacing: '0.06em',
                   textTransform: 'uppercase',
-                  color: 'rgba(90,79,255,0.7)',
+                  color: 'rgba(100,103,242,0.7)',
                   marginBottom: '0.75rem',
                 }}>
                   {label}
@@ -214,13 +214,13 @@ export default function ForBrands() {
       {/* How it works for brands */}
       <section id="how" style={{
         padding: '7rem 2rem',
-        background: '#07070f',
+        background: '#0A0A0B',
       }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <div style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.65rem',
-            color: 'rgba(90,79,255,0.6)',
+            color: 'rgba(100,103,242,0.6)',
             letterSpacing: '0.1em',
             marginBottom: '1.5rem',
           }}>
@@ -275,7 +275,7 @@ export default function ForBrands() {
                 flexShrink: 0,
                 fontFamily: 'JetBrains Mono, monospace',
                 fontSize: '0.65rem',
-                color: 'rgba(90,79,255,0.5)',
+                color: 'rgba(100,103,242,0.5)',
                 letterSpacing: '0.06em',
                 paddingTop: '4px',
               }}>
@@ -303,7 +303,7 @@ export default function ForBrands() {
                 <div style={{
                   fontFamily: 'JetBrains Mono, monospace',
                   fontSize: '0.6rem',
-                  color: 'rgba(90,79,255,0.4)',
+                  color: 'rgba(100,103,242,0.4)',
                   letterSpacing: '0.06em',
                 }}>
                   {step.detail}
@@ -317,14 +317,14 @@ export default function ForBrands() {
       {/* FAQ */}
       <section style={{
         padding: '7rem 2rem',
-        background: '#0a0a12',
+        background: '#111112',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.65rem',
-            color: 'rgba(90,79,255,0.6)',
+            color: 'rgba(100,103,242,0.6)',
             letterSpacing: '0.1em',
             marginBottom: '1.5rem',
           }}>
@@ -372,7 +372,7 @@ export default function ForBrands() {
                 <span style={{
                   fontFamily: 'JetBrains Mono, monospace',
                   fontSize: '0.9rem',
-                  color: 'rgba(90,79,255,0.6)',
+                  color: 'rgba(100,103,242,0.6)',
                   flexShrink: 0,
                   transform: openFaq === i ? 'rotate(45deg)' : 'rotate(0)',
                   transition: 'transform 0.25s ease',
@@ -401,13 +401,13 @@ export default function ForBrands() {
       {/* Enrollment form */}
       <section id="enroll" style={{
         padding: '7rem 2rem',
-        background: '#07070f',
+        background: '#0A0A0B',
       }}>
         <div style={{ maxWidth: '680px', margin: '0 auto' }}>
           <div style={{
             fontFamily: 'JetBrains Mono, monospace',
             fontSize: '0.65rem',
-            color: 'rgba(90,79,255,0.6)',
+            color: 'rgba(100,103,242,0.6)',
             letterSpacing: '0.1em',
             marginBottom: '1.5rem',
           }}>
@@ -530,12 +530,12 @@ export default function ForBrands() {
                 fontWeight: 500,
                 letterSpacing: '0.08em',
                 textTransform: 'uppercase',
-                color: '#07070f',
-                background: '#5a4fff',
+                color: '#0A0A0B',
+                background: '#6467F2',
                 border: 'none',
                 padding: '14px 24px',
                 cursor: 'pointer',
-                boxShadow: '0 8px 32px rgba(90,79,255,0.3)',
+                boxShadow: '0 8px 32px rgba(100,103,242,0.3)',
                 transition: 'all 0.3s ease',
               }}>
                 Submit Enrollment Request →
@@ -593,7 +593,7 @@ function FormField({ label, value, onChange, type = 'text', placeholder, require
           outline: 'none',
           transition: 'border-color 0.2s ease',
         }}
-        onFocus={e => e.target.style.borderColor = 'rgba(90,79,255,0.4)'}
+        onFocus={e => e.target.style.borderColor = 'rgba(100,103,242,0.4)'}
         onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,0.08)'}
       />
     </div>
