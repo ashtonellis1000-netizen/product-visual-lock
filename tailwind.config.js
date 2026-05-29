@@ -7,21 +7,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#07070f',
-        surface: '#0d0d1a',
-        'surface-2': '#13131f',
-        accent: '#6467F2',
-        'accent-dim': '#4845C8',
-        'accent-glow': 'rgba(100,103,242,0.15)',
-        border: 'rgba(255,255,255,0.07)',
-        'border-accent': 'rgba(100,103,242,0.3)',
-        text: '#f0f0f8',
-        muted: '#6b6b88',
-        dim: '#3a3a55',
+        bg: '#FFFFFF',
+        surface: '#F7F8FA',
+        'surface-2': '#EEEEF2',
+        accent: '#5558E3',
+        'accent-dim': '#4446C5',
+        'accent-glow': 'rgba(85,88,227,0.08)',
+        border: 'rgba(0,0,0,0.08)',
+        'border-accent': 'rgba(85,88,227,0.2)',
+        text: '#0F0F14',
+        muted: '#6B7080',
+        dim: '#9CA3AF',
       },
       fontFamily: {
-        serif: ['EB Garamond', 'Georgia', 'serif'],
-        sans: ['Raleway', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {

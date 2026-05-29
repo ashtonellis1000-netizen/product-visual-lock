@@ -3,9 +3,9 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer style={{
-      borderTop: '1px solid rgba(255,255,255,0.06)',
+      borderTop: '1px solid rgba(0,0,0,0.07)',
       padding: '4rem 2rem 3rem',
-      background: '#0A0A0B',
+      background: '#F7F8FA',
     }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{
@@ -14,22 +14,22 @@ export default function Footer() {
           gap: '3rem',
           marginBottom: '4rem',
         }}>
-          {/* Brand */}
           <div>
             <div style={{
-              fontFamily: 'EB Garamond, serif',
-              fontSize: '1.1rem',
-              fontWeight: 500,
-              color: '#f0f0f8',
-              marginBottom: '1rem',
+              fontFamily: 'Inter, system-ui, sans-serif',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              color: '#0F0F14',
+              marginBottom: '0.75rem',
+              letterSpacing: '-0.01em',
             }}>
               Product Visual Lock
             </div>
             <p style={{
-              fontFamily: 'Raleway, sans-serif',
+              fontFamily: 'Inter, system-ui, sans-serif',
               fontSize: '0.82rem',
-              fontWeight: 300,
-              color: 'rgba(240,240,248,0.45)',
+              fontWeight: 400,
+              color: '#6B7080',
               lineHeight: 1.7,
               maxWidth: '260px',
             }}>
@@ -37,7 +37,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* For Brands */}
           <div>
             <FooterHeading>For Brands</FooterHeading>
             <FooterLinks links={[
@@ -48,7 +47,6 @@ export default function Footer() {
             ]} />
           </div>
 
-          {/* For Creators */}
           <div>
             <FooterHeading>For Creators</FooterHeading>
             <FooterLinks links={[
@@ -59,7 +57,6 @@ export default function Footer() {
             ]} />
           </div>
 
-          {/* Company */}
           <div>
             <FooterHeading>Company</FooterHeading>
             <FooterLinks links={[
@@ -71,10 +68,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div style={{
           paddingTop: '2rem',
-          borderTop: '1px solid rgba(255,255,255,0.05)',
+          borderTop: '1px solid rgba(0,0,0,0.07)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
@@ -82,18 +78,18 @@ export default function Footer() {
           gap: '1rem',
         }}>
           <span style={{
-            fontFamily: 'Raleway, sans-serif',
+            fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: '0.75rem',
-            fontWeight: 300,
-            color: 'rgba(240,240,248,0.3)',
-            letterSpacing: '0.04em',
+            fontWeight: 400,
+            color: '#9CA3AF',
+            letterSpacing: '0em',
           }}>
             © 2026 Product Visual Lock. All rights reserved.
           </span>
           <span style={{
             fontFamily: 'JetBrains Mono, monospace',
-            fontSize: '0.7rem',
-            color: 'rgba(100,103,242,0.5)',
+            fontSize: '0.68rem',
+            color: 'rgba(85,88,227,0.4)',
             letterSpacing: '0.05em',
           }}>
             VISUAL_FINGERPRINT_LOCKED
@@ -107,12 +103,12 @@ export default function Footer() {
 function FooterHeading({ children }) {
   return (
     <div style={{
-      fontFamily: 'Raleway, sans-serif',
+      fontFamily: 'Inter, system-ui, sans-serif',
       fontSize: '0.7rem',
-      fontWeight: 500,
-      letterSpacing: '0.1em',
+      fontWeight: 600,
+      letterSpacing: '0.06em',
       textTransform: 'uppercase',
-      color: 'rgba(240,240,248,0.35)',
+      color: '#9CA3AF',
       marginBottom: '1.25rem',
     }}>
       {children}
@@ -125,15 +121,15 @@ function FooterLinks({ links }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
       {links.map(({ label, href }) => (
         <Link key={label} href={href} style={{
-          fontFamily: 'Raleway, sans-serif',
+          fontFamily: 'Inter, system-ui, sans-serif',
           fontSize: '0.83rem',
-          fontWeight: 300,
-          color: 'rgba(240,240,248,0.5)',
+          fontWeight: 400,
+          color: '#6B7080',
           textDecoration: 'none',
-          transition: 'color 0.25s ease',
+          transition: 'color 0.2s ease',
         }}
-          onMouseEnter={e => e.target.style.color = '#f0f0f8'}
-          onMouseLeave={e => e.target.style.color = 'rgba(240,240,248,0.5)'}
+          onMouseEnter={e => e.target.style.color = '#0F0F14'}
+          onMouseLeave={e => e.target.style.color = '#6B7080'}
         >
           {label}
         </Link>
