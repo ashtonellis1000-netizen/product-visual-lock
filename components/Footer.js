@@ -33,27 +33,27 @@ export default function Footer() {
               lineHeight: 1.7,
               maxWidth: '260px',
             }}>
-              Visual fingerprinting infrastructure for the AI video era. Your product, locked. Every generation, consistent.
+              Brand-accurate AI ads for your affiliate network. Lock your product once. Distribute everywhere.
             </p>
           </div>
 
           <div>
             <FooterHeading>For Brands</FooterHeading>
             <FooterLinks links={[
-              { label: 'Enroll Your Product', href: '/for-brands' },
+              { label: 'Enrol Your Product', href: '/for-brands' },
               { label: 'How It Works', href: '/#how-it-works' },
               { label: 'Pricing', href: '/#pricing' },
-              { label: 'Phase 1 — 5 spots open', href: '/for-brands#enroll' },
+              { label: 'Phase 1 — 5 partners', href: '/for-brands#enroll' },
             ]} />
           </div>
 
           <div>
-            <FooterHeading>For Creators</FooterHeading>
+            <FooterHeading>Roster</FooterHeading>
             <FooterLinks links={[
-              { label: 'Browse Brand Gallery', href: '/gallery' },
-              { label: 'Join Creator Waitlist', href: 'mailto:hello@productvisuallock.com?subject=Creator Waitlist' },
-              { label: 'How Payouts Work', href: '/#how-it-works' },
-              { label: 'Contact Us', href: 'mailto:hello@productvisuallock.com' },
+              { label: 'Brand Roster', href: '/roster' },
+              { label: 'BEYZO Case Study', href: '/#proof' },
+              { label: 'Integrations', href: '/for-brands#how' },
+              { label: 'Contact', href: 'mailto:hello@productvisuallock.com' },
             ]} />
           </div>
 
@@ -62,8 +62,8 @@ export default function Footer() {
             <FooterLinks links={[
               { label: 'GitHub', href: 'https://github.com/ashtonellis1000-netizen/product-visual-lock' },
               { label: 'Contact', href: 'mailto:hello@productvisuallock.com' },
-              { label: 'BEYZO (Case Study)', href: '/#proof' },
-              { label: 'Phase 1 Enrollment', href: '/for-brands#enroll' },
+              { label: 'Phase 1 Enrolment', href: '/for-brands#enroll' },
+              { label: 'Pricing', href: '/#pricing' },
             ]} />
           </div>
         </div>

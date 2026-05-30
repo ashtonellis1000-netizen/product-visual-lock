@@ -45,7 +45,7 @@ export default function Navbar() {
       <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }} className="hidden-mobile">
         {[
           { label: 'For Brands', href: '/for-brands' },
-          { label: 'For Creators', href: '/gallery' },
+          { label: 'Brand Roster', href: '/roster' },
           { label: 'How It Works', href: '/#how-it-works' },
           { label: 'Pricing', href: '/#pricing' },
         ].map(({ label, href }) => (
